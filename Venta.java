@@ -70,10 +70,6 @@ public class Venta {
                                 System.out.println("\nBoletos comprados: " + localidad1.getCantEspacios() + "\nLocalidad: 1" 
                                 + "\nTotal: Q" + total);
                                 localidad1.setCantEspacios(0);
-
-                                // Se resta el dinero del presuesto del comprador
-                                nuevoComprador.setPresupuestoMax(nuevoComprador.getPresupuestoMax() - total);
-                                System.out.println("Presupuesto actualizado: " + nuevoComprador.getPresupuestoMax());
                                 
                             }
                             
@@ -91,10 +87,6 @@ public class Venta {
                                 System.out.println("\nBoletos comprados: " + nuevoComprador.getCantidadBoletos() + "\nLocalidad: 1" 
                                 + "\nTotal: Q" + total);
                                 localidad1.setCantEspacios(localidad1.getCantEspacios() - nuevoComprador.getCantidadBoletos());
-
-                                // Se resta el dinero del presuesto del comprador
-                                nuevoComprador.setPresupuestoMax(nuevoComprador.getPresupuestoMax() - total);
-                                System.out.println("Presupuesto actualizado: " + nuevoComprador.getPresupuestoMax());
 
                             }
                         }
@@ -124,10 +116,6 @@ public class Venta {
                                 + "\nTotal: Q" + total);
                                 localidad5.setCantEspacios(0);
 
-                                // Se resta el dinero del presuesto del comprador
-                                nuevoComprador.setPresupuestoMax(nuevoComprador.getPresupuestoMax() - total);
-                                System.out.println("Presupuesto actualizado: " + nuevoComprador.getPresupuestoMax());
-
                             }
                             
                         } else { // Si hay suficientes
@@ -144,10 +132,6 @@ public class Venta {
                                 System.out.println("\nBoletos comprados: " + nuevoComprador.getCantidadBoletos() + "\nLocalidad: 5" 
                                 + "\nTotal: Q" + total);
                                 localidad5.setCantEspacios(localidad5.getCantEspacios() - nuevoComprador.getCantidadBoletos());
-
-                                // Se resta el dinero del presuesto del comprador
-                                nuevoComprador.setPresupuestoMax(nuevoComprador.getPresupuestoMax() - total);
-                                System.out.println("Presupuesto actualizado: " + nuevoComprador.getPresupuestoMax());
 
                             }
                         }
@@ -176,10 +160,6 @@ public class Venta {
                                 + "\nTotal: Q" + total);
                                 localidad10.setCantEspacios(0); 
 
-                                // Se resta el dinero del presuesto del comprador
-                                nuevoComprador.setPresupuestoMax(nuevoComprador.getPresupuestoMax() - total);
-                                System.out.println("Presupuesto actualizado: " + nuevoComprador.getPresupuestoMax());
-
                             }
                             
                         } else { // Si hay suficientes
@@ -196,10 +176,6 @@ public class Venta {
                                 System.out.println("\nBoletos comprados: " + nuevoComprador.getCantidadBoletos() + "\nLocalidad: 10" 
                                 + "\nTotal: Q" + total);
                                 localidad10.setCantEspacios(localidad10.getCantEspacios() - nuevoComprador.getCantidadBoletos());
-
-                                // Se resta el dinero del presuesto del comprador
-                                nuevoComprador.setPresupuestoMax(nuevoComprador.getPresupuestoMax() - total);
-                                System.out.println("Presupuesto actualizado: " + nuevoComprador.getPresupuestoMax());
 
                             }
                         }

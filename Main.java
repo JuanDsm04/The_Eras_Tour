@@ -87,9 +87,11 @@ public class Main{
                                 System.out.println("----------------------------------"); 
                                 venta.realizarVenta(localidad1, localidad5, localidad10, nuevoComprador);
                             } else {
-                                System.out.println("No se pudo completar la solicitud, el comprador tiene datos inválidos");
+                                System.out.println("El comprador tiene datos inválidos o ya solicitó boletos anteriormente");
                             }
 
+                            // Reinicia la instancia para evitar que el mismo usuario vuelva a pedir boletos
+                            nuevoComprador = new Comprador();
                             break;
 
                         case 3:
